@@ -23,6 +23,22 @@ h2{
     max-width: 114rem;
 }
 
+i{
+    padding-left: 2px;
+    
+}
+
+.mega_box i{
+    padding: 3px;
+    position: absolute;
+    right: 75%;
+}
+
+.mega_box i:hover{
+    color: white;
+    transition: all 300ms ease;
+}
+
 
 header{
     height: 5vh;
@@ -70,8 +86,7 @@ header{
 
 .mega_box .row ul{
     display: block;
-    left: 0;
-    
+    left: 0;   
 }
 
 .optionClasse{
@@ -85,34 +100,43 @@ header{
 }
 
 .optionClasse_lettre{
-    display: none;
+    
 }
 
+.optionClasse_lettre ul li{
+   background-color: green;
+
+}
+
+.optionClasse_lettre ul{
+  
+ }
+
 .mega_box .row ul li a{
-    transition: all 300ms ease;
     color: yellow;
 }
 
+.mega_box .row ul li:hover i{
+    color: white;
+    transition: all 300ms ease;
+    visibility: visible;
+    transform: rotateY(180deg);
+}
+
+.mega_box .row ul li i{
+   visibility: hidden;
+}
 
 .mega_box .row ul li:hover .optionClasse{
     display: block;
     padding: 0;
     margin: 0;
+
 }
-
-
-.mega_box .row ul li:hover {
-    color: green;
-}
-
 
 .mega_box .content{
     display: flex;
     justify-content: space-between;
-}
-
-.mega_box .content .row{
-    
 }
 
 footer{
@@ -130,6 +154,7 @@ footer ul{
     padding: 10px;
     padding-left: 0;
 }
+
 
 .contenuDebut{
     padding-left:  10px;

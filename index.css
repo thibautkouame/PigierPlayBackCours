@@ -1,3 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
+    margin: 0;
+    
+    padding: 0;
+}
+
+.note{
+    margin-left: 90px;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+#menu_content{
+    max-width: 114rem;
+}
+
+
+header{
+    height: 5vh;
+    position: fixed;
+    background-color: red ;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo img{
+    width: 30px;
+    padding: 20px;
+}
+.list_liens ul{
+    display: inline-flex;
+    list-style: none;
+    margin: 10px;
+}
+
+.list_liens ul li{
+    padding: 10px;
+}
+
+.list_liens ul li:hover .mega_box{
+    opacity: 1;
+    visibility: visible;
+}
+
+.mega_box{
+    box-shadow: 0 0 2px rgb(255, 6, 6);
+    position: absolute;
+    top: 2.4rem;
+    width: 30%;
     background-color: red;
+    margin-left: -12%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease;
+}
+
+.mega_box .row ul{
+    display: block;
+    left: 0;
+    
+}
+
+.optionClasse{
+   display: none;
+}
+
+.hover_me:hover .optionClasse_lettre{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.optionClasse_lettre{
+    display: none;
+}
+
+.mega_box .row ul li a{
+    transition: all 300ms ease;
+    color: yellow;
+}
+
+
+.mega_box .row ul li:hover .optionClasse{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+
+.mega_box .row ul li:hover {
+    color: green;
+}
+
+
+.mega_box .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mega_box .content .row{
+    
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    display: flex;
+}
+
+footer ul{
+    list-style: none;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.contenuDebut{
+    padding-left:  10px;
+}
+
+.contenuDebut h3, .contenuMilieu h3, .contenuGauche h3{
+        color: white;
 }

@@ -15,7 +15,8 @@ body{
 
 h2{
     text-align: center;
-    color: blue;
+    color: orange;
+    padding-right: 200px;
 }
 
 #menu_content{
@@ -46,25 +47,65 @@ i{
 
 header{
     height: 5vh;
-    position: fixed;
     background-color: yellow;
     width: 100%;
     display: flex;
-    margin: 0;
-    margin: 0;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    position: fixed;
+    transition: .7s;
+    top: 0;
+    left: 0;
+   
 }
+
+header.sticky{
+   background-color: blue;
+   padding: 10px;
+   padding-left: 0;
+}
+
+header.sticky .logo img{
+    width: 40%;
+ }
 
 .logo img{
     width: 30px;
     padding: 20px;
 }
 .list_liens ul{
-    display: inline-flex;
-    list-style: none;
-    margin: 10px;
+    display: flex;
+    list-style: none; 
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+ 
+.anim_awesome{
+    margin-left: 20px;
+}
+
+.active{
+    color: red;
+}
+
+.anim_awesome i{
+    color: red;
+    margin-left: 1px;
+    animation: awesome 1s infinite;
+}
+
+
+@keyframes awesome {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(30%);
+        
+    }
 }
 
 .list_liens ul li{
@@ -75,31 +116,31 @@ header{
 .list_liens ul li:hover .mega_box{
     opacity: 1;
     visibility: visible;
-    transition: all eas 300ms;
+    transition: all ease 700ms;
 }
 
 
 /* Contenu de la megabox */
 .mega_box{
     box-shadow: blue;
-    background-color: #FFFF00;
+    background-color: grey;
     position: absolute;
-    top: 2.4rem;
+    top: 2.3rem;
     width: 30%;
-    margin-left: -12%;
+    right: 0;
     opacity: 0;
     visibility: hidden;
-    transition: all 300ms ease; 
+    transition: all 900ms ease; 
+    padding: 7px;
 }
-
 
 .mega_box .row ul{
     display: block;
-    left: 0;   
 }
 
 .optionClasse{
    display: none;
+   background-color: red;
 }
  
 
@@ -118,7 +159,7 @@ header{
 
 .optionClasse_lettre ul{
   margin-bottom: -10px;
-
+  background-color: green;
 }
 
 .mega_box .row ul li a{
@@ -139,6 +180,9 @@ span{
     transform: rotateY(190deg);
     left: 27%;
 }
+/*.mega_box .row ul {
+   background-color: purple;
+}*/
 
 /* */
 .mega_box .row ul li:hover i{
@@ -149,7 +193,6 @@ span{
 }
 
 .content .row h3{
-    padding: 10px;
     color: blue;
 }
 
@@ -170,7 +213,7 @@ span{
 }
 
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     justify-content: space-between;
@@ -182,7 +225,7 @@ footer{
 footer ul{
     list-style: none;
     padding: 10px;
-    padding-left: 0;
+    padding-left: 0; 
 }
 
 
@@ -192,4 +235,37 @@ footer ul{
 
 .contenuDebut h3, .contenuMilieu h3, .contenuGauche h3{
         color: white;
+}
+
+
+@media (max-width: 768px){
+    header{
+        background-color: red;
+}
+
+#menu_content{
+    padding: 10px;
+}
+
+.note{
+    align-items: center;
+    float: right;
+    display: flex;
+    position: fixed;
+}
+
+h2{
+    text-align: center;
+    color: purple;
+    float: inline-start;
+    visibility: hidden;
+}
+footer{   
+    display: grid;
+}
+
+.contenuMilieu, .contenuGauche{
+    padding-left:  10px;
+}
+  
 }

@@ -5,6 +5,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Varela Round', sans-serif;
 }
 
 /* info dlnote */
@@ -15,14 +16,164 @@ body{
 
 h2{
     text-align: center;
-    color: orange;
+    color: #0000FF;
     padding-right: 200px;
 }
 
 #menu_content{
-    max-width: 114rem;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
- 
+
+#menu_content video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#menu_content .contenuText1, .contenuText2{
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-left: 10px solid white;
+    height: auto;
+    top: 50%;
+    left: -10%;
+    color: white;
+    padding-left: 5px;
+} 
+
+#menu_content .contenuText2 p, .contenuText1 p{
+    padding: 4px;
+}
+
+#menu_content .contenuText2{
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-left: 10px solid white;
+    height: auto;
+    top: 1%;
+    left: 39%;
+    color: white;
+    padding-left: 5px;
+}
+
+small{
+    color: yellow;
+}
+
+ .tct{
+   color: blue;
+   font-weight: bold
+}
+
+/*#menu_content::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    top: 10%;
+    height: 90vh;
+}*/
+
+#menu_content .contentText3{
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-left: 10px solid white;
+    height: auto;
+    top: 55%;
+    left: 57%;
+    color: white;
+    padding-left: 5px;
+}
+
+#menu_content .slider{
+    color: yellow;
+}
+
+#menu_content .slider h1{
+    color: white;
+}
+
+
+.slide{
+    overflow: hidden;
+    height: 50px;
+}
+
+.slide div div{
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-bottom: 37px;
+    display: inline-block;
+}
+
+.slide div:nth-child(1){
+    animation: animate 5s linear infinite;
+}
+
+.slide div:nth-child(1) div{
+   background-color: yellow;
+   color: red;
+}
+
+
+.slide div:nth-child(2) div{
+    background-color: orange;
+}
+
+.slide div:nth-child(3) div{
+    background-color: #0000FF;
+}
+
+.slide div:nth-child(4) div{
+    background-color: grey;
+}
+
+.slide div:nth-child(5) div{
+    background-color: purple;
+}
+
+
+
+@keyframes animate{
+    0%{margin-top: -270px;}
+    5%{margin-top: -180px;}
+    33%{margin-top: -180px;}
+    38%{margin-top: -90px;}
+    66%{margin-top: -90px;}
+    71%{margin-top: 0px;}
+    88%{margin-top: 10px;}
+    99.99%{margin-top: 0px;}
+    100%{margin-top: -270px;}
+}
+
+
+/*#menu_content .home_text{
+    text-align: center;
+}*/
+
+span{
+    position: absolute;
+    left: 25%; 
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+
 /* Relatif a tout les font awesomes du site */
 i{
     padding-left: 2px;   
@@ -46,8 +197,9 @@ i{
 
 
 header{
-    height: 5vh;
-    background-color: yellow;
+    height: 10vh;
+    background-color: white;
+    box-shadow: 0 0px 10px rgb(194, 189, 189);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -56,21 +208,39 @@ header{
     transition: .7s;
     top: 0;
     left: 0;
-   
+    z-index: 1;
 }
 
+
 header.sticky{
-   background-color: blue;
+   background-color: #FFFF00;
    padding: 10px;
    padding-left: 0;
+
 }
 
 header.sticky .logo img{
-    width: 40%;
+    width: 30%;
  }
 
+ header.sticky .mega_box{
+    top: 5.9rem; 
+    background-color: #FFFF00;
+    width: 32%;
+    right: 0;
+    box-shadow: 4px 4px white;
+}
+
+header.sticky .connect li i{
+    color: rgb(196, 196, 196);
+}
+
+header.sticky .anim_awesome i{
+    color: rgb(196, 196, 196);
+}
+
 .logo img{
-    width: 30px;
+    width: 27%;
     padding: 20px;
 }
 .list_liens ul{
@@ -80,7 +250,7 @@ header.sticky .logo img{
 
 a{
     text-decoration: none;
-    color: red;
+    color: #0000FF;
 }
  
 .anim_awesome{
@@ -88,11 +258,13 @@ a{
 }
 
 .active{
-    color: red;
+    /*#8b3dff*/
+    color: #0000FF;
+    font-size: 20px;
 }
 
 .anim_awesome i{
-    color: red;
+    color: #FFFF00;
     margin-left: 1px;
     animation: awesome 1s infinite;
 }
@@ -122,10 +294,10 @@ a{
 
 /* Contenu de la megabox */
 .mega_box{
-    box-shadow: blue;
-    background-color: grey;
+    box-shadow: 7px 7px grey;
+    background-color: white;
     position: absolute;
-    top: 2.3rem;
+    top: 4.7rem;
     width: 30%;
     right: 0;
     opacity: 0;
@@ -137,12 +309,11 @@ a{
 .mega_box .row ul{
     display: block;
 }
-
 .optionClasse{
    display: none;
-   background-color: red;
+   
 }
- 
+
 
 /* Permet d'afficher la liste des lettres celon les lettres */
 .hover_me:hover .optionClasse_lettre{
@@ -166,12 +337,7 @@ a{
     color: black;
 }
 
-span{
-    position: absolute;
-    left: 25%; 
-    visibility: hidden;
-    opacity: 0;
-}
+
 
 .mega_box .row ul li ul li:hover span{
     visibility: visible; 
@@ -193,7 +359,7 @@ span{
 }
 
 .content .row h3{
-    color: blue;
+    color: #0000FF;
 }
 
 .mega_box .row i{
@@ -210,7 +376,23 @@ span{
 .mega_box .content{
     display: flex;
     justify-content: space-between;
+    border-radius: 30px;
+}   
+.connect {
+    box-shadow: 0 0  1px grey;
+    border-radius: 3px;    
 }
+
+
+.connect li i{
+    color: #FFFF00;
+}
+
+.connect li i:hover{
+    color: white;
+    transition:  all ease .3s;
+}
+
 
 footer{
     position: relative;
@@ -218,7 +400,7 @@ footer{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    background-color: #FFFF00;
     display: flex;
 }
 
@@ -226,27 +408,28 @@ footer ul{
     list-style: none;
     padding: 10px;
     padding-left: 0; 
+    
 }
-
 
 .contenuDebut{
     padding-left:  10px;
 }
 
 .contenuDebut h3, .contenuMilieu h3, .contenuGauche h3{
-        color: white;
+        color: #0000FF;
+              
 }
-
 
 @media (max-width: 768px){
     header{
         background-color: red;
 }
 
+
 #menu_content{
     padding: 10px;
-}
 
+}
 .note{
     align-items: center;
     float: right;

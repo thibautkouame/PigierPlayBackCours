@@ -5,7 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b651e5cd59.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    
+    <script type="text/javascript"> 
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);   
+        }) 
+    </script>
+
     <title>Binvenue ! </title>
 </head>
 <body>
@@ -14,7 +25,7 @@
             <img src="images/pigierCi.png" alt="" srcset="">
         </div>
         <div class="note">
-            <h2>Pour pour la mise a jour ?</h2>
+            <h2>PRET A RATTRAPER LE TEMPS PERDU ?</h2>
         </div>
         <div class="list_liens">
             <ul>
@@ -49,7 +60,7 @@
                                               <li class="hover_me"><a href="">3ème année</a> <span><i class="fa-solid fa-angle-down"></i></span>
                                                 <div class="optionClasse_lettre">
                                                     <ul>
-                                                      <li><a href="./">A</a></li>
+                                                      <li><a href="./pages/rgl3aSoir.html">A</a></li>
                                                       <li><a href="">B</a></li>
                                                       <li><a href="">C</a></li>
                                                   </ul>
@@ -234,89 +245,50 @@
                         </div>
                     </div>
                 </li>
-               
+                <div class="connect">
+                    <li class="active">Connexion <i class="fa-solid fa-lock"></i></li>
+                </div>
                 <li class="active">Tutoriel</li>
             </ul>
         </div>
     </header>
 
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        }) 
-    </script>
-
     <div id="menu_content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis metus eu feugiat auctor. Maecenas eget nibh aliquam, accumsan tortor in, molestie est. Quisque sed tellus ex. Donec ac placerat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam placerat velit eget libero faucibus, ut dapibus urna viverra. Aenean hendrerit, felis eu vestibulum fermentum, quam nunc cursus nunc, nec auctor augue odio vitae sem.
-
-            Nam vitae felis nec lacus tempus tristique et in arcu. Donec auctor urna non felis iaculis molestie. Nunc lacinia lorem odio, vel convallis ipsum vehicula at. Vivamus in erat tincidunt, pellentesque dui mattis, euismod lorem. Donec eget hendrerit justo. Etiam accumsan porttitor purus, nec lobortis dolor molestie ac. Quisque placerat faucibus felis at interdum. Donec sodales dapibus mi sed tristique. Proin rhoncus risus quis cursus suscipit. Fusce at gravida odio, venenatis semper quam.
-            
-            Vivamus tincidunt mi lorem, ac malesuada quam vestibulum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum mattis lacus at maximus. Sed tristique enim quis egestas posuere. Nunc pretium mattis ex eu efficitur. Vivamus ultricies imperdiet pretium. Fusce nec massa euismod turpis molestie vestibulum ut ac tortor. Maecenas nec nisl diam. Ut elementum viverra orci, vel elementum enim lobortis et.
-            
-            Aliquam ultrices hendrerit augue nec cursus. Maecenas dignissim urna elementum risus fermentum, a ornare dolor egestas. Ut gravida orci quam, vitae elementum dolor laoreet id. Proin enim lacus, tempor sed semper non, tincidunt eu ante. Cras orci diam, posuere quis eleifend et, dictum nec turpis. Phasellus lorem urna, accumsan eu lectus vel, consequat feugiat turpis. In euismod et sapien quis feugiat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis metus eu feugiat auctor. Maecenas eget nibh aliquam, accumsan tortor in, molestie est. Quisque sed tellus ex. Donec ac placerat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam placerat velit eget libero faucibus, ut dapibus urna viverra. Aenean hendrerit, felis eu vestibulum fermentum, quam nunc cursus nunc, nec auctor augue odio vitae sem.
-
-                Nam vitae felis nec lacus tempus tristique et in arcu. Donec auctor urna non felis iaculis molestie. Nunc lacinia lorem odio, vel convallis ipsum vehicula at. Vivamus in erat tincidunt, pellentesque dui mattis, euismod lorem. Donec eget hendrerit justo. Etiam accumsan porttitor purus, nec lobortis dolor molestie ac. Quisque placerat faucibus felis at interdum. Donec sodales dapibus mi sed tristique. Proin rhoncus risus quis cursus suscipit. Fusce at gravida odio, venenatis semper quam.
-                
-                Vivamus tincidunt mi lorem, ac malesuada quam vestibulum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum mattis lacus at maximus. Sed tristique enim quis egestas posuere. Nunc pretium mattis ex eu efficitur. Vivamus ultricies imperdiet pretium. Fusce nec massa euismod turpis molestie vestibulum ut ac tortor. Maecenas nec nisl diam. Ut elementum viverra orci, vel elementum enim lobortis et.
-                
-                Aliquam ultrices hendrerit augue nec cursus. Maecenas dignissim urna elementum risus fermentum, a ornare dolor egestas. Ut gravida orci quam, vitae elementum dolor laoreet id. Proin enim lacus, tempor sed semper non, tincidunt eu ante. Cras orci diam, posuere quis eleifend et, dictum nec turpis. Phasellus lorem urna, accumsan eu lectus vel, consequat feugiat turpis. In euismod et sapien quis feugiat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis metus eu feugiat auctor. Maecenas eget nibh aliquam, accumsan tortor in, molestie est. Quisque sed tellus ex. Donec ac placerat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam placerat velit eget libero faucibus, ut dapibus urna viverra. Aenean hendrerit, felis eu vestibulum fermentum, quam nunc cursus nunc, nec auctor augue odio vitae sem.
-
-                    Nam vitae felis nec lacus tempus tristique et in arcu. Donec auctor urna non felis iaculis molestie. Nunc lacinia lorem odio, vel convallis ipsum vehicula at. Vivamus in erat tincidunt, pellentesque dui mattis, euismod lorem. Donec eget hendrerit justo. Etiam accumsan porttitor purus, nec lobortis dolor molestie ac. Quisque placerat faucibus felis at interdum. Donec sodales dapibus mi sed tristique. Proin rhoncus risus quis cursus suscipit. Fusce at gravida odio, venenatis semper quam.
-                    
-                    Vivamus tincidunt mi lorem, ac malesuada quam vestibulum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum mattis lacus at maximus. Sed tristique enim quis egestas posuere. Nunc pretium mattis ex eu efficitur. Vivamus ultricies imperdiet pretium. Fusce nec massa euismod turpis molestie vestibulum ut ac tortor. Maecenas nec nisl diam. Ut elementum viverra orci, vel elementum enim lobortis et.
-                    
-                    Aliquam ultrices hendrerit augue nec cursus. Maecenas dignissim urna elementum risus fermentum, a ornare dolor egestas. Ut gravida orci quam, vitae elementum dolor laoreet id. Proin enim lacus, tempor sed semper non, tincidunt eu ante. Cras orci diam, posuere quis eleifend et, dictum nec turpis. Phasellus lorem urna, accumsan eu lectus vel, consequat feugiat turpis. In euismod et sapien quis feugiat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis metus eu feugiat auctor. Maecenas eget nibh aliquam, accumsan tortor in, molestie est. Quisque sed tellus ex. Donec ac placerat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam placerat velit eget libero faucibus, ut dapibus urna viverra. Aenean hendrerit, felis eu vestibulum fermentum, quam nunc cursus nunc, nec auctor augue odio vitae sem.
-
-                        Nam vitae felis nec lacus tempus tristique et in arcu. Donec auctor urna non felis iaculis molestie. Nunc lacinia lorem odio, vel convallis ipsum vehicula at. Vivamus in erat tincidunt, pellentesque dui mattis, euismod lorem. Donec eget hendrerit justo. Etiam accumsan porttitor purus, nec lobortis dolor molestie ac. Quisque placerat faucibus felis at interdum. Donec sodales dapibus mi sed tristique. Proin rhoncus risus quis cursus suscipit. Fusce at gravida odio, venenatis semper quam.
-                        
-                        Vivamus tincidunt mi lorem, ac malesuada quam vestibulum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum mattis lacus at maximus. Sed tristique enim quis egestas posuere. Nunc pretium mattis ex eu efficitur. Vivamus ultricies imperdiet pretium. Fusce nec massa euismod turpis molestie vestibulum ut ac tortor. Maecenas nec nisl diam. Ut elementum viverra orci, vel elementum enim lobortis et.
-                        
-                        Aliquam ultrices hendrerit augue nec cursus. Maecenas dignissim urna elementum risus fermentum, a ornare dolor egestas. Ut gravida orci quam, vitae elementum dolor laoreet id. Proin enim lacus, tempor sed semper non, tincidunt eu ante. Cras orci diam, posuere quis eleifend et, dictum nec turpis. Phasellus lorem urna, accumsan eu lectus vel, consequat feugiat turpis. In euismod et sapien quis feugiat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis metus eu feugiat auctor. Maecenas eget nibh aliquam, accumsan tortor in, molestie est. Quisque sed tellus ex. Donec ac placerat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam placerat velit eget libero faucibus, ut dapibus urna viverra. Aenean hendrerit, felis eu vestibulum fermentum, quam nunc cursus nunc, nec auctor augue odio vitae sem.
-
-                            Nam vitae felis nec lacus tempus tristique et in arcu. Donec auctor urna non felis iaculis molestie. Nunc lacinia lorem odio, vel convallis ipsum vehicula at. Vivamus in erat tincidunt, pellentesque dui mattis, euismod lorem. Donec eget hendrerit justo. Etiam accumsan porttitor purus, nec lobortis dolor molestie ac. Quisque placerat faucibus felis at interdum. Donec sodales dapibus mi sed tristique. Proin rhoncus risus quis cursus suscipit. Fusce at gravida odio, venenatis semper quam.
-                            
-                            Vivamus tincidunt mi lorem, ac malesuada quam vestibulum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum mattis lacus at maximus. Sed tristique enim quis egestas posuere. Nunc pretium mattis ex eu efficitur. Vivamus ultricies imperdiet pretium. Fusce nec massa euismod turpis molestie vestibulum ut ac tortor. Maecenas nec nisl diam. Ut elementum viverra orci, vel elementum enim lobortis et.
-                            
-                            Aliquam ultrices hendrerit augue nec cursus. Maecenas dignissim urna elementum risus fermentum, a ornare dolor egestas. Ut gravida orci quam, vitae elementum dolor laoreet id. Proin enim lacus, tempor sed semper non, tincidunt eu ante. Cras orci diam, posuere quis eleifend et, dictum nec turpis. Phasellus lorem urna, accumsan eu lectus vel, consequat feugiat turpis. In euismod et sapien quis feugiat.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis metus eu feugiat auctor. Maecenas eget nibh aliquam, accumsan tortor in, molestie est. Quisque sed tellus ex. Donec ac placerat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam placerat velit eget libero faucibus, ut dapibus urna viverra. Aenean hendrerit, felis eu vestibulum fermentum, quam nunc cursus nunc, nec auctor augue odio vitae sem.
-
-                                Nam vitae felis nec lacus tempus tristique et in arcu. Donec auctor urna non felis iaculis molestie. Nunc lacinia lorem odio, vel convallis ipsum vehicula at. Vivamus in erat tincidunt, pellentesque dui mattis, euismod lorem. Donec eget hendrerit justo. Etiam accumsan porttitor purus, nec lobortis dolor molestie ac. Quisque placerat faucibus felis at interdum. Donec sodales dapibus mi sed tristique. Proin rhoncus risus quis cursus suscipit. Fusce at gravida odio, venenatis semper quam.
-                                
-                                Vivamus tincidunt mi lorem, ac malesuada quam vestibulum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum mattis lacus at maximus. Sed tristique enim quis egestas posuere. Nunc pretium mattis ex eu efficitur. Vivamus ultricies imperdiet pretium. Fusce nec massa euismod turpis molestie vestibulum ut ac tortor. Maecenas nec nisl diam. Ut elementum viverra orci, vel elementum enim lobortis et.
-                                
-                                Aliquam ultrices hendrerit augue nec cursus. Maecenas dignissim urna elementum risus fermentum, a ornare dolor egestas. Ut gravida orci quam, vitae elementum dolor laoreet id. Proin enim lacus, tempor sed semper non, tincidunt eu ante. Cras orci diam, posuere quis eleifend et, dictum nec turpis. Phasellus lorem urna, accumsan eu lectus vel, consequat feugiat turpis. In euismod et sapien quis feugiat.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis metus eu feugiat auctor. Maecenas eget nibh aliquam, accumsan tortor in, molestie est. Quisque sed tellus ex. Donec ac placerat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam placerat velit eget libero faucibus, ut dapibus urna viverra. Aenean hendrerit, felis eu vestibulum fermentum, quam nunc cursus nunc, nec auctor augue odio vitae sem.
-
-                                    Nam vitae felis nec lacus tempus tristique et in arcu. Donec auctor urna non felis iaculis molestie. Nunc lacinia lorem odio, vel convallis ipsum vehicula at. Vivamus in erat tincidunt, pellentesque dui mattis, euismod lorem. Donec eget hendrerit justo. Etiam accumsan porttitor purus, nec lobortis dolor molestie ac. Quisque placerat faucibus felis at interdum. Donec sodales dapibus mi sed tristique. Proin rhoncus risus quis cursus suscipit. Fusce at gravida odio, venenatis semper quam.
-                                    
-                                    Vivamus tincidunt mi lorem, ac malesuada quam vestibulum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum mattis lacus at maximus. Sed tristique enim quis egestas posuere. Nunc pretium mattis ex eu efficitur. Vivamus ultricies imperdiet pretium. Fusce nec massa euismod turpis molestie vestibulum ut ac tortor. Maecenas nec nisl diam. Ut elementum viverra orci, vel elementum enim lobortis et.
-                                    
-                                    Aliquam ultrices hendrerit augue nec cursus. Maecenas dignissim urna elementum risus fermentum, a ornare dolor egestas. Ut gravida orci quam, vitae elementum dolor laoreet id. Proin enim lacus, tempor sed semper non, tincidunt eu ante. Cras orci diam, posuere quis eleifend et, dictum nec turpis. Phasellus lorem urna, accumsan eu lectus vel, consequat feugiat turpis. In euismod et sapien quis feugiat.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis metus eu feugiat auctor. Maecenas eget nibh aliquam, accumsan tortor in, molestie est. Quisque sed tellus ex. Donec ac placerat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam placerat velit eget libero faucibus, ut dapibus urna viverra. Aenean hendrerit, felis eu vestibulum fermentum, quam nunc cursus nunc, nec auctor augue odio vitae sem.
-
-                                        Nam vitae felis nec lacus tempus tristique et in arcu. Donec auctor urna non felis iaculis molestie. Nunc lacinia lorem odio, vel convallis ipsum vehicula at. Vivamus in erat tincidunt, pellentesque dui mattis, euismod lorem. Donec eget hendrerit justo. Etiam accumsan porttitor purus, nec lobortis dolor molestie ac. Quisque placerat faucibus felis at interdum. Donec sodales dapibus mi sed tristique. Proin rhoncus risus quis cursus suscipit. Fusce at gravida odio, venenatis semper quam.
-                                        
-                                        Vivamus tincidunt mi lorem, ac malesuada quam vestibulum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum mattis lacus at maximus. Sed tristique enim quis egestas posuere. Nunc pretium mattis ex eu efficitur. Vivamus ultricies imperdiet pretium. Fusce nec massa euismod turpis molestie vestibulum ut ac tortor. Maecenas nec nisl diam. Ut elementum viverra orci, vel elementum enim lobortis et.
-                                        
-                                        Aliquam ultrices hendrerit augue nec cursus. Maecenas dignissim urna elementum risus fermentum, a ornare dolor egestas. Ut gravida orci quam, vitae elementum dolor laoreet id. Proin enim lacus, tempor sed semper non, tincidunt eu ante. Cras orci diam, posuere quis eleifend et, dictum nec turpis. Phasellus lorem urna, accumsan eu lectus vel, consequat feugiat turpis. In euismod et sapien quis feugiat.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis metus eu feugiat auctor. Maecenas eget nibh aliquam, accumsan tortor in, molestie est. Quisque sed tellus ex. Donec ac placerat est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam placerat velit eget libero faucibus, ut dapibus urna viverra. Aenean hendrerit, felis eu vestibulum fermentum, quam nunc cursus nunc, nec auctor augue odio vitae sem.
-
-                                            Nam vitae felis nec lacus tempus tristique et in arcu. Donec auctor urna non felis iaculis molestie. Nunc lacinia lorem odio, vel convallis ipsum vehicula at. Vivamus in erat tincidunt, pellentesque dui mattis, euismod lorem. Donec eget hendrerit justo. Etiam accumsan porttitor purus, nec lobortis dolor molestie ac. Quisque placerat faucibus felis at interdum. Donec sodales dapibus mi sed tristique. Proin rhoncus risus quis cursus suscipit. Fusce at gravida odio, venenatis semper quam.
-                                            
-                                            Vivamus tincidunt mi lorem, ac malesuada quam vestibulum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum mattis lacus at maximus. Sed tristique enim quis egestas posuere. Nunc pretium mattis ex eu efficitur. Vivamus ultricies imperdiet pretium. Fusce nec massa euismod turpis molestie vestibulum ut ac tortor. Maecenas nec nisl diam. Ut elementum viverra orci, vel elementum enim lobortis et.
-                                            
-                                            Aliquam ultrices hendrerit augue nec cursus. Maecenas dignissim urna elementum risus fermentum, a ornare dolor egestas. Ut gravida orci quam, vitae elementum dolor laoreet id. Proin enim lacus, tempor sed semper non, tincidunt eu ante. Cras orci diam, posuere quis eleifend et, dictum nec turpis. Phasellus lorem urna, accumsan eu lectus vel, consequat feugiat turpis. In euismod et sapien quis feugiat.</p>
+           <video autoplay muted loop>
+               <source src="./videos/Presentation GOMIS.mp4">
+           </video>
+           <div class="contenuText1">
+               <h1>NE RATEZ PLUS ACUN <small class="tct">COURS</small></h1>
+               <p>
+                Chaques fin de semaines vous trouverez sur cette <br> 
+                platefrome les cours necessaires pour votre mise a niveuau. <br>
+                Nos serveurs sont ouverts tout les jours, mais le mises a jour des differents <br> cours se font tout les samedis a partir de 20h, le temps de receuillir <br> toutes le vides de la semaine
+            </p>
+           </div>
+           <div class="contenuText2">
+            <h1><small>POURQUOI CETTE</small> PLATEFORME ? </h1>
+            <div class="contentText2Content">
+                <p>
+                    Cette Platefrome a pour ojectif primaire de permettre aux  <br> étudiants de PIGIER de reprendre les cours vues ou pas <br>  cause de notre abscence en classe
+                </p>
+            </div>
+        </div>
+        <div class="contentText3 slider">
+           <h1>Dès <small> Maintenant !</small></h1>
+           <div class="slide">
+                <div><div>Un cour</div></div>
+                <div><div>Ou</div></div>
+                <div><div>Revisez</div></div>
+                <div><div>Appenez</div></div>
+                <div><div>Cour</div></div>
+           </div>
+        </div>
     </div>
 
     
     <footer>
        <div class="contenuDebut">
-           <h3>A propos</h3>
+           <h3 class="borderbrnForh3">A propos</h3>
            <ul>
             <li>Qui sommes-nous ?</li>
             <li>Nos Contacts</li>
@@ -326,7 +298,7 @@
         </ul>
        </div>
        <div class="contenuMilieu">
-           <h3>Liens utiles</h3>
+           <h3 class="borderbrnForh3">Liens utiles</h3>
         <ul>
             <li>Udemy</li>
             <li>OpenClassrom</li>
@@ -334,7 +306,7 @@
         </ul>
        </div>
        <div class="contenuGauche">
-           <h3>Pigier</h3>
+           <h3 class="borderbrnForh3">Pigier</h3>
         <ul>
             <li>Entrez en contact avec l'ecole</li>
             <li>Site Officiel</li>

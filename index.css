@@ -66,9 +66,14 @@ h2{
     padding-left: 5px;
 }
 
-small{
+.small1{
     color: yellow;
 }
+
+.small2{
+    color: red;
+}
+
 
  .tct{
    color: blue;
@@ -187,14 +192,13 @@ i{
 .mega_box i{
     padding: 3px;
     position: absolute;
-    right: 80%;
+    left: 20%;
 }
 
 .mega_box i:hover{
     color: white;
     transition: all 300ms ease;
 }
-
 
 header{
     height: 10vh;
@@ -216,7 +220,6 @@ header.sticky{
    background-color: #FFFF00;
    padding: 10px;
    padding-left: 0;
-
 }
 
 header.sticky .logo img{
@@ -330,12 +333,18 @@ a{
 
 .optionClasse_lettre ul{
   margin-bottom: -10px;
-  background-color: green;
+  margin-left: 30%;
 }
+
 
 .mega_box .row ul li a{
     color: black;
 }
+
+.mega_box .row .optionClasse_lettre ul li a{
+    color: #0000FF;
+}
+
 
 
 
@@ -344,7 +353,7 @@ a{
     opacity: 1; 
     transition: all 300ms ease;
     transform: rotateY(190deg);
-    left: 27%;
+    left: 36%;
 }
 /*.mega_box .row ul {
    background-color: purple;
@@ -352,10 +361,11 @@ a{
 
 /* */
 .mega_box .row ul li:hover i{
-    color: green;
+    color: #0000FF;
     transition: all 300ms ease;
     visibility: visible;
-    transform: rotateY(190deg); 
+    transform: rotateY(190deg);  
+     
 }
 
 .content .row h3{
